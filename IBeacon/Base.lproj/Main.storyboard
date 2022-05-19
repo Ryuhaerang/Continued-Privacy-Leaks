@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Airpods_Friend" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4s-Uh-3qf">
+                                <rect key="frame" x="45.5" y="152" width="284" height="30"/>
+                                <color key="backgroundColor" red="0.26274509800000001" green="0.59215686270000001" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="284" id="VDf-az-Ui7"/>
+                                </constraints>
+                                <state key="normal" title="Start advertising">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnStartTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2pp-eW-JfE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeJ-Ff-vYd" userLabel="Start listening">
+                                <rect key="frame" x="45.5" y="395" width="284" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="284" id="VnL-mu-16D"/>
+                                </constraints>
+                                <state key="normal" title="Start listening">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Startlistening:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0jc-Bj-7Xs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaI-9p-XEH" userLabel="Stop listening">
+                                <rect key="frame" x="45.5" y="433" width="284" height="30"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="284" id="lZg-cG-pi8"/>
+                                </constraints>
+                                <state key="normal" title="Stop listening">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Stoplistening:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uSs-4u-AUg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Airpods Friend" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltE-5i-Xmd">
+                                <rect key="frame" x="18" y="30" width="205" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdK-zf-9IO">
+                                <rect key="frame" x="45.5" y="190" width="284" height="30"/>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.20000000000000001" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="284" id="NGc-vh-I10"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Stop advertising">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnStopTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="06e-ta-FQe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please write down the data you want to send." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hy0-xi-2oR">
+                                <rect key="frame" x="50.5" y="86" width="274" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please press the button to enter receiver mode." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dag-sE-xQU">
+                                <rect key="frame" x="43.5" y="371" width="288" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Received data:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8O-Bm-yon">
+                                <rect key="frame" x="143" y="471" width="89.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Received data will be shown here..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZ8-2Y-ACb" userLabel="outputText">
+                                <rect key="frame" x="45.5" y="495" width="284" height="120"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="284" id="6dd-Ka-mfd"/>
+                                    <constraint firstAttribute="height" constant="120" id="u24-o4-z2L"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="uHA-sW-cZI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qgk-in-hIL" userLabel="inputText">
+                                <rect key="frame" x="45.5" y="110" width="284" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="284" id="DMu-od-tSb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sent data:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTi-Rc-pvy">
+                                <rect key="frame" x="156.5" y="228" width="62" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="6Le-x1-gUA"/>
+                                    <constraint firstAttribute="width" constant="62" id="r8r-sd-nTB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Sent data will be shown here..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ja-VT-aJy" userLabel="outputText">
+                                <rect key="frame" x="45.5" y="252" width="284" height="77"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="284" id="SPW-cn-yOZ"/>
+                                    <constraint firstAttribute="height" constant="77" id="dWT-q8-4AY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ltE-5i-Xmd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="1dx-UW-7CV"/>
+                            <constraint firstItem="KeJ-Ff-vYd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2UA-OB-S3f"/>
+                            <constraint firstItem="dag-sE-xQU" firstAttribute="top" secondItem="jdK-zf-9IO" secondAttribute="bottom" constant="151" id="2e1-Gr-dCS"/>
+                            <constraint firstItem="qgk-in-hIL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D36-dr-8hk"/>
+                            <constraint firstItem="iZ8-2Y-ACb" firstAttribute="top" secondItem="V8O-Bm-yon" secondAttribute="bottom" constant="8" id="FWY-fP-X2L"/>
+                            <constraint firstItem="sTi-Rc-pvy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GaT-cW-cdS"/>
+                            <constraint firstItem="vaI-9p-XEH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IDj-lN-xIg"/>
+                            <constraint firstItem="iZ8-2Y-ACb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ISg-nR-Uvv"/>
+                            <constraint firstItem="l4s-Uh-3qf" firstAttribute="top" secondItem="qgk-in-hIL" secondAttribute="bottom" constant="8" id="Jmr-zj-qXn"/>
+                            <constraint firstItem="dag-sE-xQU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PR9-st-dqS"/>
+                            <constraint firstItem="qgk-in-hIL" firstAttribute="top" secondItem="Hy0-xi-2oR" secondAttribute="bottom" constant="8" id="SkZ-3z-j5N"/>
+                            <constraint firstItem="3ja-VT-aJy" firstAttribute="top" secondItem="sTi-Rc-pvy" secondAttribute="bottom" constant="8" id="XiB-YR-7QY"/>
+                            <constraint firstItem="KeJ-Ff-vYd" firstAttribute="top" secondItem="dag-sE-xQU" secondAttribute="bottom" constant="8" id="Xwm-u5-yQZ"/>
+                            <constraint firstItem="Hy0-xi-2oR" firstAttribute="top" secondItem="ltE-5i-Xmd" secondAttribute="bottom" constant="20" id="YIA-H0-1AS"/>
+                            <constraint firstItem="ltE-5i-Xmd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="bEi-gm-MEh"/>
+                            <constraint firstItem="3ja-VT-aJy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eJO-Sn-qUn"/>
+                            <constraint firstItem="Hy0-xi-2oR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f7T-Xf-2P2"/>
+                            <constraint firstItem="jdK-zf-9IO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hjT-6q-a3d"/>
+                            <constraint firstItem="sTi-Rc-pvy" firstAttribute="top" secondItem="jdK-zf-9IO" secondAttribute="bottom" constant="8" id="j5z-Bc-UAb"/>
+                            <constraint firstItem="jdK-zf-9IO" firstAttribute="top" secondItem="l4s-Uh-3qf" secondAttribute="bottom" constant="8" id="tMA-fQ-8Tz"/>
+                            <constraint firstItem="V8O-Bm-yon" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uKg-2t-r8w"/>
+                            <constraint firstItem="vaI-9p-XEH" firstAttribute="top" secondItem="KeJ-Ff-vYd" secondAttribute="bottom" constant="8" id="wAU-Ln-6g1"/>
+                            <constraint firstItem="V8O-Bm-yon" firstAttribute="top" secondItem="vaI-9p-XEH" secondAttribute="bottom" constant="8" id="wUC-Lx-dXF"/>
+                            <constraint firstItem="l4s-Uh-3qf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wkM-yp-O3u"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputText" destination="qgk-in-hIL" id="yGf-jR-tAt"/>
+                        <outlet property="outputText" destination="iZ8-2Y-ACb" id="r2v-OO-8XP"/>
+                        <outlet property="sentText" destination="3ja-VT-aJy" id="HuQ-7J-YL8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="116.49175412293854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
